@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,8 +16,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 78px;
-  background-color: red;
+  background: linear-gradient(#F2994A,#F2C94C);
   padding: 0px 16px;
+}
+
+.logo {
+  width: 300px;
+  margin-left: 20px;
 }
 
 a {
@@ -22,6 +31,7 @@ a {
   position: relative;
   text-decoration: none;
   font-weight: 700;
+  font-size: 20px;
 }
 
 a::after{
@@ -39,35 +49,58 @@ a:hover::after {
   width: 80%;
 }
 
-a:hover {
-  color:black;
-}
-
-header {
+header,.row__header {
   background-color: #EADCFF;
-  min-height: calc(100vh - 78px);
+  height: calc(100vh - 78px);
   padding: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: 700;
+.laptop_img {
+  width: 100%;
+  max-width: 600px;
+}
+
+
+/* 
+
+BUTTON
+
+*/
+
+button {
+  background-color: dodgerblue;
   color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(#F2994A,#F2C94C);
+}
+
+/*
+
+ELEMENTS 
+
+*/
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 1.5px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 24px;
   color: black;
   padding: 16px 0px;
-}
-
-
-.logo {
-  width: 350px;
-  margin-left: 20px;
+  font-weight: 500;
 }
 
 ul {
@@ -79,3 +112,133 @@ li {
   list-style: none;
 }
 
+.section__distribution {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.section__img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.text__description--para {
+  width: 80%;
+  max-width: 700px;
+  justify-content: center;
+}
+
+.text__description {
+  font-size: 20px;
+  color: black;
+  padding: 16px 20px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+  padding-bottom: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+
+ABOUT
+
+*/
+
+#about {
+  background-color: turquoise; ;
+  height: 50%;
+  max-height: 100vh;
+  padding: 24px;
+}
+
+/* 
+
+DISCORD
+
+*/
+
+#discord {
+  background-color: #86edffcc;
+  height: 50%;
+  max-height: 100vh;
+  padding: 24px;
+}
+
+.section__img--bigger{
+width: 600;
+max-width: 40vh;
+min-width: 1px;
+}
+
+/* 
+
+CONTACT
+
+*/
+
+#contact {
+  background-color: lightgray;
+  max-height: 100vh;
+  height: auto;
+  padding: 24px;
+}
+
+form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+input,textarea,#contact__button {
+  margin-top: 12px;
+  padding: 2px 3px;
+  max-width: 600;
+  font-size: 20px;
+  width: 60%;
+  padding: 6px;
+}
+
+span {
+  margin-top: 12px;
+  font-weight: 500;
+  justify-content:;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+footer {
+  background: linear-gradient(#F2994A,#F2C94C);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 60%;
+  max-width: 400px;
+}
+
+.footer__links {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer__link {
+font-size: 24px;
+}
