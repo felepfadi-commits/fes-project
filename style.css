@@ -251,11 +251,12 @@ footer {
 /* small phones, tables large phones */
 
 @media (max-width: 728px) {
+
   nav ul {
     display: none;
   }
 
-  .logo{
+  .logo {
     margin: 0px;
   }
 
@@ -286,8 +287,7 @@ footer {
   }
 
   #about,#discord {
-    padding: 8px;
-    height: 100vh;
+    max-height: fit-content;    
   }
   
   input,textarea {
@@ -302,13 +302,12 @@ footer {
 
   .footer__link {
     font-size: 5.5vw;
-
   }
 
     footer {
     gap: 12px;
     flex: 1 1 320px;
-   }
+  }
   
     footer p {
      font-size: 22px;
